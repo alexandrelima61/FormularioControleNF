@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayoutPadrao.master.cs" Inherits="Ecourbis.FormularioNFRemRet.UI.Web.LayoutPadrao" %>
+
+<%@ Register Src="~/UserControl/WebUserControlMenu.ascx" TagPrefix="uc1" TagName="WebUserControlMenu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Formulario Notas Remessa e Retorno</title>
+
+    <link href="Content/css/pages.css" rel="stylesheet" />    
+    
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="Content/css/jquery-ui.css" rel="stylesheet" />    
+
+    <script src="Content/js/jquery-1.9.1.js"></script>
+    <script src="Content/js/jquery-ui.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="jumbotron bordas text-center boxShadow" style="margin-top: 10px;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-2" style="padding: 15px 15px; float: left; margin-right: 5px;">
+                            <asp:Image ID="logo" ImageUrl="~/Imagens/ecourbis_Branco_Transp.png" CssClass="logo" runat="server" />
+                        </div>
+                        <div class="col-md-9 modal-title" style="float: right">
+                            <h3>FORMULÁRIO DE SOLICITAÇÃO DE NOTA FISCAL DE REMESSA OU RETORNO DE BENS EM GERAL E DE CONTROLE DE RECEBIMENTO DE BENS DE TERCEIROS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav nav-justified">
+                <uc1:WebUserControlMenu runat="server" ID="WebUserControlMenu" />
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <br />
+            <div class="jumbotron bordas boxShadow text-right" style="height: 25px;">
+                <footer>
+                    <p>Ecourbis Ambiental S/A - <%:DateTime.Now.Month +"/"+ DateTime.Now.Year  %></p>
+                </footer>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DADOSADVModelStoreContainer" CdmEntityContainer="DADOSADVEntities">
+    <EntitySetMapping Name="PAG010">
+      <EntityTypeMapping TypeName="DADOSADVModel.PAG010">
+        <MappingFragment StoreEntitySet="PAG010">
+          <ScalarProperty Name="PAG_FILIAL" ColumnName="PAG_FILIAL" />
+          <ScalarProperty Name="PAG_COD" ColumnName="PAG_COD" />
+          <ScalarProperty Name="D_E_L_E_T_" ColumnName="D_E_L_E_T_" />
+          <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAH010">
+      <EntityTypeMapping TypeName="DADOSADVModel.PAH010">
+        <MappingFragment StoreEntitySet="PAH010">
+          <ScalarProperty Name="PAH_FILIAL" ColumnName="PAH_FILIAL" />
+          <ScalarProperty Name="PAH_CONTRO" ColumnName="PAH_CONTRO" />
+          <ScalarProperty Name="PAH_RETIRA" ColumnName="PAH_RETIRA" />
+          <ScalarProperty Name="PAH_USER" ColumnName="PAH_USER" />
+          <ScalarProperty Name="PAH_NUMUSE" ColumnName="PAH_NUMUSE" />
+          <ScalarProperty Name="PAH_DEPUSE" ColumnName="PAH_DEPUSE" />
+          <ScalarProperty Name="PAH_EMAIL" ColumnName="PAH_EMAIL" />
+          <ScalarProperty Name="PAH_DTSOLI" ColumnName="PAH_DTSOLI" />
+          <ScalarProperty Name="PAH_PRAZO" ColumnName="PAH_PRAZO" />
+          <ScalarProperty Name="PAH_PRAZOU" ColumnName="PAH_PRAZOU" />
+          <ScalarProperty Name="PAH_PRAZOS" ColumnName="PAH_PRAZOS" />
+          <ScalarProperty Name="PAH_UNIDAD" ColumnName="PAH_UNIDAD" />
+          <ScalarProperty Name="PAH_TIPO" ColumnName="PAH_TIPO" />
+          <ScalarProperty Name="PAH_NFORI" ColumnName="PAH_NFORI" />
+          <ScalarProperty Name="PAH_CLIFOR" ColumnName="PAH_CLIFOR" />
+          <ScalarProperty Name="PAH_LOJA" ColumnName="PAH_LOJA" />
+          <ScalarProperty Name="PAH_NOME" ColumnName="PAH_NOME" />
+          <ScalarProperty Name="PAH_END" ColumnName="PAH_END" />
+          <ScalarProperty Name="PAH_TEL" ColumnName="PAH_TEL" />
+          <ScalarProperty Name="PAH_NFREM" ColumnName="PAH_NFREM" />
+          <ScalarProperty Name="PAH_NFTERC" ColumnName="PAH_NFTERC" />
+          <ScalarProperty Name="PAH_NFRET" ColumnName="PAH_NFRET" />
+          <ScalarProperty Name="PAH_JUST" ColumnName="PAH_JUST" />
+          <ScalarProperty Name="PAH_FUNUSE" ColumnName="PAH_FUNUSE" />
+          <ScalarProperty Name="PAH_CGC" ColumnName="PAH_CGC" />
+          <ScalarProperty Name="PAH_EMAILF" ColumnName="PAH_EMAILF" />
+          <ScalarProperty Name="PAH_BAIXAD" ColumnName="PAH_BAIXAD" />
+          <ScalarProperty Name="D_E_L_E_T_" ColumnName="D_E_L_E_T_" />
+          <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAI010">
+      <EntityTypeMapping TypeName="DADOSADVModel.PAI010">
+        <MappingFragment StoreEntitySet="PAI010">
+          <ScalarProperty Name="PAI_FILIAL" ColumnName="PAI_FILIAL" />
+          <ScalarProperty Name="PAI_ITEM" ColumnName="PAI_ITEM" />
+          <ScalarProperty Name="PAI_CODP" ColumnName="PAI_CODP" />
+          <ScalarProperty Name="PAI_DESC" ColumnName="PAI_DESC" />
+          <ScalarProperty Name="PAI_QTD" ColumnName="PAI_QTD" />
+          <ScalarProperty Name="PAI_CONTRO" ColumnName="PAI_CONTRO" />
+          <ScalarProperty Name="PAI_PRAZO" ColumnName="PAI_PRAZO" />
+          <ScalarProperty Name="PAI_UNMED" ColumnName="PAI_UNMED" />
+          <ScalarProperty Name="PAI_LOGPRA" ColumnName="PAI_LOGPRA" />
+          <ScalarProperty Name="D_E_L_E_T_" ColumnName="D_E_L_E_T_" />
+          <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewForne">
+      <EntityTypeMapping TypeName="DADOSADVModel.viewForne">
+        <MappingFragment StoreEntitySet="viewForne">
+          <ScalarProperty Name="A2_COD" ColumnName="A2_COD" />
+          <ScalarProperty Name="A2_NOME" ColumnName="A2_NOME" />
+          <ScalarProperty Name="A2_LOJA" ColumnName="A2_LOJA" />
+          <ScalarProperty Name="A2_END" ColumnName="A2_END" />
+          <ScalarProperty Name="A2_DDD" ColumnName="A2_DDD" />
+          <ScalarProperty Name="A2_TEL" ColumnName="A2_TEL" />
+          <ScalarProperty Name="A2_EMAIL" ColumnName="A2_EMAIL" />
+          <ScalarProperty Name="A2_CGC" ColumnName="A2_CGC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewFuncao">
+      <EntityTypeMapping TypeName="DADOSADVModel.viewFuncao">
+        <MappingFragment StoreEntitySet="viewFuncao">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Funcao" ColumnName="Funcao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewProd">
+      <EntityTypeMapping TypeName="DADOSADVModel.viewProd">
+        <MappingFragment StoreEntitySet="viewProd">
+          <ScalarProperty Name="B1_COD" ColumnName="B1_COD" />
+          <ScalarProperty Name="B1_DESC" ColumnName="B1_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewUnidMed">
+      <EntityTypeMapping TypeName="DADOSADVModel.viewUnidMed">
+        <MappingFragment StoreEntitySet="viewUnidMed">
+          <ScalarProperty Name="AH_UNIMED" ColumnName="AH_UNIMED" />
+          <ScalarProperty Name="AH_UMRES" ColumnName="AH_UMRES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewGstEco">
+      <EntityTypeMapping TypeName="DADOSADVModel.viewGstEco">
+        <MappingFragment StoreEntitySet="viewGstEco">
+          <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+          <ScalarProperty Name="NomeSuperior" ColumnName="NomeSuperior" />
+          <ScalarProperty Name="Superior" ColumnName="Superior" />
+          <ScalarProperty Name="CodGestor" ColumnName="CodGestor" />
+          <ScalarProperty Name="Custo" ColumnName="Custo" />
+          <ScalarProperty Name="CC" ColumnName="CC" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viewMatUser">
+      <EntityTypeMapping TypeName="DADOSADVModel.viewMatUser">
+        <MappingFragment StoreEntitySet="viewMatUser">
+          <ScalarProperty Name="Login_User" ColumnName="Login_User" />
+          <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,14 @@
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Business.dll.config
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Business.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Business.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Model.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Repository.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\EntityFramework.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Model.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.Repository.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\bin\Debug\EntityFramework.xml
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\obj\Debug\Ecourbis.FormularioNFRemRet.Business.csprojResolveAssemblyReference.cache
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\obj\Debug\Ecourbis.FormularioNFRemRet.Business.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Business\obj\Debug\Ecourbis.FormularioNFRemRet.Business.pdb

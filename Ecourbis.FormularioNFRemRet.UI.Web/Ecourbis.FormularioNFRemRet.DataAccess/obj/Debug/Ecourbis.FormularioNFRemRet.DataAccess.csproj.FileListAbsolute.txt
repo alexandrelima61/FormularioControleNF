@@ -1,0 +1,8 @@
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.dll.config
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\obj\Debug\Ecourbis.FormularioNFRemRet.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\obj\Debug\Ecourbis.FormularioNFRemRet.DataAccess.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.DataAccess\obj\Debug\Ecourbis.FormularioNFRemRet.DataAccess.pdb

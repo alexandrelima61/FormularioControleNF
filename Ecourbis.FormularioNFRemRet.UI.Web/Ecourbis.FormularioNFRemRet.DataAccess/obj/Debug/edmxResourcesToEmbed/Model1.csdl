@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DADOSADVModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="PAG010">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="PAG_FILIAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAG_COD" Type="Double" Nullable="false" />
+    <Property Name="D_E_L_E_T_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="PAH010">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="PAH_FILIAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_CONTRO" Type="Double" Nullable="false" />
+    <Property Name="PAH_RETIRA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_USER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_NUMUSE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_DEPUSE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_EMAIL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_DTSOLI" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_PRAZO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_PRAZOU" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_PRAZOS" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_UNIDAD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_TIPO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_NFORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_CLIFOR" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_LOJA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_NOME" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_END" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_TEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_NFREM" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_NFTERC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_NFRET" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_JUST" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_FUNUSE" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_CGC" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_EMAILF" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAH_BAIXAD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="D_E_L_E_T_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="PAI010">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="PAI_FILIAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_ITEM" Type="Double" Nullable="false" />
+    <Property Name="PAI_CODP" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_DESC" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_QTD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_CONTRO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_PRAZO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_UNMED" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PAI_LOGPRA" Type="Double" Nullable="false" />
+    <Property Name="D_E_L_E_T_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="viewForne">
+    <Key>
+      <PropertyRef Name="A2_COD" />
+      <PropertyRef Name="A2_NOME" />
+      <PropertyRef Name="A2_LOJA" />
+      <PropertyRef Name="A2_END" />
+      <PropertyRef Name="A2_DDD" />
+      <PropertyRef Name="A2_TEL" />
+      <PropertyRef Name="A2_EMAIL" />
+      <PropertyRef Name="A2_CGC" />
+    </Key>
+    <Property Name="A2_COD" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_NOME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_LOJA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_END" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_DDD" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_EMAIL" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="A2_CGC" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viewFuncao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="Funcao" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="viewProd">
+    <Key>
+      <PropertyRef Name="B1_COD" />
+      <PropertyRef Name="B1_DESC" />
+    </Key>
+    <Property Name="B1_COD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="B1_DESC" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viewUnidMed">
+    <Key>
+      <PropertyRef Name="AH_UNIMED" />
+      <PropertyRef Name="AH_UMRES" />
+    </Key>
+    <Property Name="AH_UNIMED" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AH_UMRES" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DADOSADVEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PAG010" EntityType="Self.PAG010" />
+    <EntitySet Name="PAH010" EntityType="Self.PAH010" />
+    <EntitySet Name="PAI010" EntityType="Self.PAI010" />
+    <EntitySet Name="viewForne" EntityType="Self.viewForne" />
+    <EntitySet Name="viewFuncao" EntityType="Self.viewFuncao" />
+    <EntitySet Name="viewProd" EntityType="Self.viewProd" />
+    <EntitySet Name="viewUnidMed" EntityType="Self.viewUnidMed" />
+    <EntitySet Name="viewGstEco" EntityType="DADOSADVModel.viewGstEco" />
+    <EntitySet Name="viewMatUser" EntityType="DADOSADVModel.viewMatUser" />
+  </EntityContainer>
+  <EntityType Name="viewGstEco">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="Nome" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Matricula" Type="Int32" />
+    <Property Name="CC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Custo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CodGestor" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="Superior" Type="Int32" />
+    <Property Name="NomeSuperior" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viewMatUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Matricula" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Login_User" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41bd47e2ac514d36a1567851a447f029" Name="Diagram1" ZoomLevel="81">
+        <EntityTypeShape EntityType="DADOSADVModel.PAG010" Width="1.5" PointX="2" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.PAH010" Width="1.5" PointX="0.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.PAI010" Width="1.5" PointX="3.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.viewForne" Width="1.5" PointX="9.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.viewFuncao" Width="1.5" PointX="5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.viewProd" Width="1.5" PointX="6.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.viewUnidMed" Width="1.5" PointX="8" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DADOSADVModel.viewGstEco" Width="1.5" PointX="11.125" PointY="0.75" />
+        <EntityTypeShape EntityType="DADOSADVModel.viewMatUser" Width="1.5" PointX="12.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

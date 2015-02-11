@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DADOSADVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityType Name="PAG010">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="PAG_FILIAL" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="PAG_COD" Type="float" Nullable="false" />
+          <Property Name="D_E_L_E_T_" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="R_E_C_N_O_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PAH010">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="PAH_FILIAL" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="PAH_CONTRO" Type="float" Nullable="false" />
+          <Property Name="PAH_RETIRA" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PAH_USER" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="PAH_NUMUSE" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="PAH_DEPUSE" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="PAH_EMAIL" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="PAH_DTSOLI" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PAH_PRAZO" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PAH_PRAZOU" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PAH_PRAZOS" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PAH_UNIDAD" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PAH_TIPO" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PAH_NFORI" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PAH_CLIFOR" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="PAH_LOJA" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="PAH_NOME" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="PAH_END" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="PAH_TEL" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="PAH_NFREM" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PAH_NFTERC" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PAH_NFRET" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="PAH_JUST" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="PAH_FUNUSE" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="PAH_CGC" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="PAH_EMAILF" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="PAH_BAIXAD" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="D_E_L_E_T_" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="R_E_C_N_O_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PAI010">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="PAI_FILIAL" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="PAI_ITEM" Type="float" Nullable="false" />
+          <Property Name="PAI_CODP" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="PAI_DESC" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="PAI_QTD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PAI_CONTRO" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PAI_PRAZO" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="PAI_UNMED" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="PAI_LOGPRA" Type="float" Nullable="false" />
+          <Property Name="D_E_L_E_T_" Type="varchar" MaxLength="1" Nullable="false" />
+          <Property Name="R_E_C_N_O_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewForne' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewForne">
+          <Key>
+            <PropertyRef Name="A2_COD" />
+            <PropertyRef Name="A2_NOME" />
+            <PropertyRef Name="A2_LOJA" />
+            <PropertyRef Name="A2_END" />
+            <PropertyRef Name="A2_DDD" />
+            <PropertyRef Name="A2_TEL" />
+            <PropertyRef Name="A2_EMAIL" />
+            <PropertyRef Name="A2_CGC" />
+          </Key>
+          <Property Name="A2_COD" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="A2_NOME" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="A2_LOJA" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="A2_END" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="A2_DDD" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="A2_TEL" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="A2_EMAIL" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="A2_CGC" Type="varchar" MaxLength="14" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewFuncao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewFuncao">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login" Type="nvarchar" MaxLength="40" />
+          <Property Name="Funcao" Type="varchar" MaxLength="70" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewGstEco' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewGstEco">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="Nome" Type="varchar" MaxLength="30" />
+          <Property Name="Matricula" Type="int" />
+          <Property Name="CC" Type="varchar" MaxLength="10" />
+          <Property Name="Custo" Type="varchar" MaxLength="40" />
+          <Property Name="CodGestor" Type="varchar" MaxLength="9" />
+          <Property Name="Superior" Type="int" />
+          <Property Name="NomeSuperior" Type="varchar" MaxLength="30" />
+          <Property Name="R_E_C_N_O_" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewMatUser' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewMatUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Matricula" Type="nvarchar" MaxLength="10" />
+          <Property Name="Login_User" Type="nvarchar" MaxLength="40" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewProd' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewProd">
+          <Key>
+            <PropertyRef Name="B1_COD" />
+            <PropertyRef Name="B1_DESC" />
+          </Key>
+          <Property Name="B1_COD" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="B1_DESC" Type="varchar" MaxLength="80" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewUnidMed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="viewUnidMed">
+          <Key>
+            <PropertyRef Name="AH_UNIMED" />
+            <PropertyRef Name="AH_UMRES" />
+          </Key>
+          <Property Name="AH_UNIMED" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="AH_UMRES" Type="varchar" MaxLength="9" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DADOSADVModelStoreContainer">
+          <EntitySet Name="PAG010" EntityType="Self.PAG010" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PAH010" EntityType="Self.PAH010" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PAI010" EntityType="Self.PAI010" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="viewForne" EntityType="Self.viewForne" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[viewForne].[A2_COD] AS [A2_COD], 
+[viewForne].[A2_NOME] AS [A2_NOME], 
+[viewForne].[A2_LOJA] AS [A2_LOJA], 
+[viewForne].[A2_END] AS [A2_END], 
+[viewForne].[A2_DDD] AS [A2_DDD], 
+[viewForne].[A2_TEL] AS [A2_TEL], 
+[viewForne].[A2_EMAIL] AS [A2_EMAIL], 
+[viewForne].[A2_CGC] AS [A2_CGC]
+FROM [dbo].[viewForne] AS [viewForne]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="viewFuncao" EntityType="Self.viewFuncao" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[viewFuncao].[Id] AS [Id], 
+[viewFuncao].[Login] AS [Login], 
+[viewFuncao].[Funcao] AS [Funcao]
+FROM [dbo].[viewFuncao] AS [viewFuncao]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="viewGstEco" EntityType="Self.viewGstEco" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[viewGstEco].[Nome] AS [Nome], 
+[viewGstEco].[Matricula] AS [Matricula], 
+[viewGstEco].[CC] AS [CC], 
+[viewGstEco].[Custo] AS [Custo], 
+[viewGstEco].[CodGestor] AS [CodGestor], 
+[viewGstEco].[Superior] AS [Superior], 
+[viewGstEco].[NomeSuperior] AS [NomeSuperior], 
+[viewGstEco].[R_E_C_N_O_] AS [R_E_C_N_O_]
+FROM [dbo].[viewGstEco] AS [viewGstEco]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="viewMatUser" EntityType="Self.viewMatUser" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[viewMatUser].[Id] AS [Id], 
+[viewMatUser].[Matricula] AS [Matricula], 
+[viewMatUser].[Login_User] AS [Login_User]
+FROM [dbo].[viewMatUser] AS [viewMatUser]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="viewProd" EntityType="Self.viewProd" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[viewProd].[B1_COD] AS [B1_COD], 
+[viewProd].[B1_DESC] AS [B1_DESC]
+FROM [dbo].[viewProd] AS [viewProd]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="viewUnidMed" EntityType="Self.viewUnidMed" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[viewUnidMed].[AH_UNIMED] AS [AH_UNIMED], 
+[viewUnidMed].[AH_UMRES] AS [AH_UMRES]
+FROM [dbo].[viewUnidMed] AS [viewUnidMed]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DADOSADVModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityType Name="PAG010">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="PAG_FILIAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAG_COD" Type="Double" Nullable="false" />
+          <Property Name="D_E_L_E_T_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="PAH010">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="PAH_FILIAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_CONTRO" Type="Double" Nullable="false" />
+          <Property Name="PAH_RETIRA" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_USER" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_NUMUSE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_DEPUSE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_EMAIL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_DTSOLI" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_PRAZO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_PRAZOU" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_PRAZOS" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_UNIDAD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_TIPO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_NFORI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_CLIFOR" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_LOJA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_NOME" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_END" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_TEL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_NFREM" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_NFTERC" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_NFRET" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_JUST" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_FUNUSE" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_CGC" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_EMAILF" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAH_BAIXAD" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="D_E_L_E_T_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="PAI010">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="PAI_FILIAL" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_ITEM" Type="Double" Nullable="false" />
+          <Property Name="PAI_CODP" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_DESC" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_QTD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_CONTRO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_PRAZO" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_UNMED" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PAI_LOGPRA" Type="Double" Nullable="false" />
+          <Property Name="D_E_L_E_T_" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="viewForne">
+          <Key>
+            <PropertyRef Name="A2_COD" />
+            <PropertyRef Name="A2_NOME" />
+            <PropertyRef Name="A2_LOJA" />
+            <PropertyRef Name="A2_END" />
+            <PropertyRef Name="A2_DDD" />
+            <PropertyRef Name="A2_TEL" />
+            <PropertyRef Name="A2_EMAIL" />
+            <PropertyRef Name="A2_CGC" />
+          </Key>
+          <Property Name="A2_COD" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_NOME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_LOJA" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_END" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_DDD" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_TEL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_EMAIL" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="A2_CGC" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="viewFuncao">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="Funcao" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="viewProd">
+          <Key>
+            <PropertyRef Name="B1_COD" />
+            <PropertyRef Name="B1_DESC" />
+          </Key>
+          <Property Name="B1_COD" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="B1_DESC" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="viewUnidMed">
+          <Key>
+            <PropertyRef Name="AH_UNIMED" />
+            <PropertyRef Name="AH_UMRES" />
+          </Key>
+          <Property Name="AH_UNIMED" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AH_UMRES" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="DADOSADVEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PAG010" EntityType="Self.PAG010" />
+          <EntitySet Name="PAH010" EntityType="Self.PAH010" />
+          <EntitySet Name="PAI010" EntityType="Self.PAI010" />
+          <EntitySet Name="viewForne" EntityType="Self.viewForne" />
+          <EntitySet Name="viewFuncao" EntityType="Self.viewFuncao" />
+          <EntitySet Name="viewProd" EntityType="Self.viewProd" />
+          <EntitySet Name="viewUnidMed" EntityType="Self.viewUnidMed" />
+          <EntitySet Name="viewGstEco" EntityType="DADOSADVModel.viewGstEco" />
+          <EntitySet Name="viewMatUser" EntityType="DADOSADVModel.viewMatUser" />
+        </EntityContainer>
+        <EntityType Name="viewGstEco">
+          <Key>
+            <PropertyRef Name="R_E_C_N_O_" />
+          </Key>
+          <Property Name="Nome" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Matricula" Type="Int32" />
+          <Property Name="CC" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Custo" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="CodGestor" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="Superior" Type="Int32" />
+          <Property Name="NomeSuperior" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="R_E_C_N_O_" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="viewMatUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Matricula" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Login_User" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DADOSADVModelStoreContainer" CdmEntityContainer="DADOSADVEntities">
+          <EntitySetMapping Name="PAG010">
+            <EntityTypeMapping TypeName="DADOSADVModel.PAG010">
+              <MappingFragment StoreEntitySet="PAG010">
+                <ScalarProperty Name="PAG_FILIAL" ColumnName="PAG_FILIAL" />
+                <ScalarProperty Name="PAG_COD" ColumnName="PAG_COD" />
+                <ScalarProperty Name="D_E_L_E_T_" ColumnName="D_E_L_E_T_" />
+                <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAH010">
+            <EntityTypeMapping TypeName="DADOSADVModel.PAH010">
+              <MappingFragment StoreEntitySet="PAH010">
+                <ScalarProperty Name="PAH_FILIAL" ColumnName="PAH_FILIAL" />
+                <ScalarProperty Name="PAH_CONTRO" ColumnName="PAH_CONTRO" />
+                <ScalarProperty Name="PAH_RETIRA" ColumnName="PAH_RETIRA" />
+                <ScalarProperty Name="PAH_USER" ColumnName="PAH_USER" />
+                <ScalarProperty Name="PAH_NUMUSE" ColumnName="PAH_NUMUSE" />
+                <ScalarProperty Name="PAH_DEPUSE" ColumnName="PAH_DEPUSE" />
+                <ScalarProperty Name="PAH_EMAIL" ColumnName="PAH_EMAIL" />
+                <ScalarProperty Name="PAH_DTSOLI" ColumnName="PAH_DTSOLI" />
+                <ScalarProperty Name="PAH_PRAZO" ColumnName="PAH_PRAZO" />
+                <ScalarProperty Name="PAH_PRAZOU" ColumnName="PAH_PRAZOU" />
+                <ScalarProperty Name="PAH_PRAZOS" ColumnName="PAH_PRAZOS" />
+                <ScalarProperty Name="PAH_UNIDAD" ColumnName="PAH_UNIDAD" />
+                <ScalarProperty Name="PAH_TIPO" ColumnName="PAH_TIPO" />
+                <ScalarProperty Name="PAH_NFORI" ColumnName="PAH_NFORI" />
+                <ScalarProperty Name="PAH_CLIFOR" ColumnName="PAH_CLIFOR" />
+                <ScalarProperty Name="PAH_LOJA" ColumnName="PAH_LOJA" />
+                <ScalarProperty Name="PAH_NOME" ColumnName="PAH_NOME" />
+                <ScalarProperty Name="PAH_END" ColumnName="PAH_END" />
+                <ScalarProperty Name="PAH_TEL" ColumnName="PAH_TEL" />
+                <ScalarProperty Name="PAH_NFREM" ColumnName="PAH_NFREM" />
+                <ScalarProperty Name="PAH_NFTERC" ColumnName="PAH_NFTERC" />
+                <ScalarProperty Name="PAH_NFRET" ColumnName="PAH_NFRET" />
+                <ScalarProperty Name="PAH_JUST" ColumnName="PAH_JUST" />
+                <ScalarProperty Name="PAH_FUNUSE" ColumnName="PAH_FUNUSE" />
+                <ScalarProperty Name="PAH_CGC" ColumnName="PAH_CGC" />
+                <ScalarProperty Name="PAH_EMAILF" ColumnName="PAH_EMAILF" />
+                <ScalarProperty Name="PAH_BAIXAD" ColumnName="PAH_BAIXAD" />
+                <ScalarProperty Name="D_E_L_E_T_" ColumnName="D_E_L_E_T_" />
+                <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PAI010">
+            <EntityTypeMapping TypeName="DADOSADVModel.PAI010">
+              <MappingFragment StoreEntitySet="PAI010">
+                <ScalarProperty Name="PAI_FILIAL" ColumnName="PAI_FILIAL" />
+                <ScalarProperty Name="PAI_ITEM" ColumnName="PAI_ITEM" />
+                <ScalarProperty Name="PAI_CODP" ColumnName="PAI_CODP" />
+                <ScalarProperty Name="PAI_DESC" ColumnName="PAI_DESC" />
+                <ScalarProperty Name="PAI_QTD" ColumnName="PAI_QTD" />
+                <ScalarProperty Name="PAI_CONTRO" ColumnName="PAI_CONTRO" />
+                <ScalarProperty Name="PAI_PRAZO" ColumnName="PAI_PRAZO" />
+                <ScalarProperty Name="PAI_UNMED" ColumnName="PAI_UNMED" />
+                <ScalarProperty Name="PAI_LOGPRA" ColumnName="PAI_LOGPRA" />
+                <ScalarProperty Name="D_E_L_E_T_" ColumnName="D_E_L_E_T_" />
+                <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="viewForne">
+            <EntityTypeMapping TypeName="DADOSADVModel.viewForne">
+              <MappingFragment StoreEntitySet="viewForne">
+                <ScalarProperty Name="A2_COD" ColumnName="A2_COD" />
+                <ScalarProperty Name="A2_NOME" ColumnName="A2_NOME" />
+                <ScalarProperty Name="A2_LOJA" ColumnName="A2_LOJA" />
+                <ScalarProperty Name="A2_END" ColumnName="A2_END" />
+                <ScalarProperty Name="A2_DDD" ColumnName="A2_DDD" />
+                <ScalarProperty Name="A2_TEL" ColumnName="A2_TEL" />
+                <ScalarProperty Name="A2_EMAIL" ColumnName="A2_EMAIL" />
+                <ScalarProperty Name="A2_CGC" ColumnName="A2_CGC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="viewFuncao">
+            <EntityTypeMapping TypeName="DADOSADVModel.viewFuncao">
+              <MappingFragment StoreEntitySet="viewFuncao">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="Funcao" ColumnName="Funcao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="viewProd">
+            <EntityTypeMapping TypeName="DADOSADVModel.viewProd">
+              <MappingFragment StoreEntitySet="viewProd">
+                <ScalarProperty Name="B1_COD" ColumnName="B1_COD" />
+                <ScalarProperty Name="B1_DESC" ColumnName="B1_DESC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="viewUnidMed">
+            <EntityTypeMapping TypeName="DADOSADVModel.viewUnidMed">
+              <MappingFragment StoreEntitySet="viewUnidMed">
+                <ScalarProperty Name="AH_UNIMED" ColumnName="AH_UNIMED" />
+                <ScalarProperty Name="AH_UMRES" ColumnName="AH_UMRES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="viewGstEco">
+            <EntityTypeMapping TypeName="DADOSADVModel.viewGstEco">
+              <MappingFragment StoreEntitySet="viewGstEco">
+                <ScalarProperty Name="R_E_C_N_O_" ColumnName="R_E_C_N_O_" />
+                <ScalarProperty Name="NomeSuperior" ColumnName="NomeSuperior" />
+                <ScalarProperty Name="Superior" ColumnName="Superior" />
+                <ScalarProperty Name="CodGestor" ColumnName="CodGestor" />
+                <ScalarProperty Name="Custo" ColumnName="Custo" />
+                <ScalarProperty Name="CC" ColumnName="CC" />
+                <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="viewMatUser">
+            <EntityTypeMapping TypeName="DADOSADVModel.viewMatUser">
+              <MappingFragment StoreEntitySet="viewMatUser">
+                <ScalarProperty Name="Login_User" ColumnName="Login_User" />
+                <ScalarProperty Name="Matricula" ColumnName="Matricula" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

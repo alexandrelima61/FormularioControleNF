@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://webservice.ecourbis.com.br/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://webservice.ecourbis.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://webservice.ecourbis.com.br/">
+      <s:element name="dataset_SAMAccountName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dataset_SAMAccountNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataset_SAMAccountNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dataset_auditoria">
+        <s:complexType />
+      </s:element>
+      <s:element name="dataset_auditoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataset_auditoriaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dataset_Managers">
+        <s:complexType />
+      </s:element>
+      <s:element name="dataset_ManagersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataset_ManagersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsManagerName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sDepartamento" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsManagerNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsManagerNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dataset_Users">
+        <s:complexType />
+      </s:element>
+      <s:element name="dataset_UsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dataset_UsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayList_OfficialsMicrosiga">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPrefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayList_OfficialsMicrosigaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArrayList_OfficialsMicrosigaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayList_activedirectory">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sPrefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ArrayList_activedirectoryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ArrayList_activedirectoryResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsSAMAccountName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsSAMAccountNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsSAMAccountNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsFullName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsFullNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsFullNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsDepartment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsDepartmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsDepartmentResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsEmailRequestor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsEmailRequestorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsEmailRequestorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsCompanyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsContainer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsContainerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsContainerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsBiometrico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsBiometricoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsBiometricoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsAnalista">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sSAMAccountName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="wsAnalistaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="wsAnalistaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfString" nillable="true" type="tns:ArrayOfString" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="dataset_SAMAccountNameSoapIn">
+    <wsdl:part name="parameters" element="tns:dataset_SAMAccountName" />
+  </wsdl:message>
+  <wsdl:message name="dataset_SAMAccountNameSoapOut">
+    <wsdl:part name="parameters" element="tns:dataset_SAMAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="dataset_auditoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:dataset_auditoria" />
+  </wsdl:message>
+  <wsdl:message name="dataset_auditoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:dataset_auditoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="dataset_ManagersSoapIn">
+    <wsdl:part name="parameters" element="tns:dataset_Managers" />
+  </wsdl:message>
+  <wsdl:message name="dataset_ManagersSoapOut">
+    <wsdl:part name="parameters" element="tns:dataset_ManagersResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsManagerNameSoapIn">
+    <wsdl:part name="parameters" element="tns:wsManagerName" />
+  </wsdl:message>
+  <wsdl:message name="wsManagerNameSoapOut">
+    <wsdl:part name="parameters" element="tns:wsManagerNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="dataset_UsersSoapIn">
+    <wsdl:part name="parameters" element="tns:dataset_Users" />
+  </wsdl:message>
+  <wsdl:message name="dataset_UsersSoapOut">
+    <wsdl:part name="parameters" element="tns:dataset_UsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_OfficialsMicrosigaSoapIn">
+    <wsdl:part name="parameters" element="tns:ArrayList_OfficialsMicrosiga" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_OfficialsMicrosigaSoapOut">
+    <wsdl:part name="parameters" element="tns:ArrayList_OfficialsMicrosigaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_activedirectorySoapIn">
+    <wsdl:part name="parameters" element="tns:ArrayList_activedirectory" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_activedirectorySoapOut">
+    <wsdl:part name="parameters" element="tns:ArrayList_activedirectoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsSAMAccountNameSoapIn">
+    <wsdl:part name="parameters" element="tns:wsSAMAccountName" />
+  </wsdl:message>
+  <wsdl:message name="wsSAMAccountNameSoapOut">
+    <wsdl:part name="parameters" element="tns:wsSAMAccountNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsFullNameSoapIn">
+    <wsdl:part name="parameters" element="tns:wsFullName" />
+  </wsdl:message>
+  <wsdl:message name="wsFullNameSoapOut">
+    <wsdl:part name="parameters" element="tns:wsFullNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsDepartmentSoapIn">
+    <wsdl:part name="parameters" element="tns:wsDepartment" />
+  </wsdl:message>
+  <wsdl:message name="wsDepartmentSoapOut">
+    <wsdl:part name="parameters" element="tns:wsDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsEmailRequestorSoapIn">
+    <wsdl:part name="parameters" element="tns:wsEmailRequestor" />
+  </wsdl:message>
+  <wsdl:message name="wsEmailRequestorSoapOut">
+    <wsdl:part name="parameters" element="tns:wsEmailRequestorResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:wsCompany" />
+  </wsdl:message>
+  <wsdl:message name="wsCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:wsCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsContainerSoapIn">
+    <wsdl:part name="parameters" element="tns:wsContainer" />
+  </wsdl:message>
+  <wsdl:message name="wsContainerSoapOut">
+    <wsdl:part name="parameters" element="tns:wsContainerResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsBiometricoSoapIn">
+    <wsdl:part name="parameters" element="tns:wsBiometrico" />
+  </wsdl:message>
+  <wsdl:message name="wsBiometricoSoapOut">
+    <wsdl:part name="parameters" element="tns:wsBiometricoResponse" />
+  </wsdl:message>
+  <wsdl:message name="wsAnalistaSoapIn">
+    <wsdl:part name="parameters" element="tns:wsAnalista" />
+  </wsdl:message>
+  <wsdl:message name="wsAnalistaSoapOut">
+    <wsdl:part name="parameters" element="tns:wsAnalistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="dataset_SAMAccountNameHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dataset_SAMAccountNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dataset_auditoriaHttpGetIn" />
+  <wsdl:message name="dataset_auditoriaHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dataset_ManagersHttpGetIn" />
+  <wsdl:message name="dataset_ManagersHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="wsManagerNameHttpGetIn">
+    <wsdl:part name="sDepartamento" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsManagerNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="dataset_UsersHttpGetIn" />
+  <wsdl:message name="dataset_UsersHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_OfficialsMicrosigaHttpGetIn">
+    <wsdl:part name="sPrefixText" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_OfficialsMicrosigaHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_activedirectoryHttpGetIn">
+    <wsdl:part name="sPrefixText" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_activedirectoryHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="wsSAMAccountNameHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsSAMAccountNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsFullNameHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsFullNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsDepartmentHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsDepartmentHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsEmailRequestorHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsEmailRequestorHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsCompanyHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsCompanyHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsContainerHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsContainerHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsBiometricoHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsBiometricoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsAnalistaHttpGetIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsAnalistaHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="dataset_SAMAccountNameHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="dataset_SAMAccountNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dataset_auditoriaHttpPostIn" />
+  <wsdl:message name="dataset_auditoriaHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="dataset_ManagersHttpPostIn" />
+  <wsdl:message name="dataset_ManagersHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="wsManagerNameHttpPostIn">
+    <wsdl:part name="sDepartamento" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsManagerNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="dataset_UsersHttpPostIn" />
+  <wsdl:message name="dataset_UsersHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_OfficialsMicrosigaHttpPostIn">
+    <wsdl:part name="sPrefixText" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_OfficialsMicrosigaHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_activedirectoryHttpPostIn">
+    <wsdl:part name="sPrefixText" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ArrayList_activedirectoryHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfString" />
+  </wsdl:message>
+  <wsdl:message name="wsSAMAccountNameHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsSAMAccountNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsFullNameHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsFullNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsDepartmentHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsDepartmentHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsEmailRequestorHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsEmailRequestorHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsCompanyHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsCompanyHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsContainerHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsContainerHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsBiometricoHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsBiometricoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="wsAnalistaHttpPostIn">
+    <wsdl:part name="sSAMAccountName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="wsAnalistaHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WSusernameSoap">
+    <wsdl:operation name="dataset_SAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return DataSet with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:dataset_SAMAccountNameSoapIn" />
+      <wsdl:output message="tns:dataset_SAMAccountNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dataset returns information to users</wsdl:documentation>
+      <wsdl:input message="tns:dataset_auditoriaSoapIn" />
+      <wsdl:output message="tns:dataset_auditoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns Dataset with names of managers</wsdl:documentation>
+      <wsdl:input message="tns:dataset_ManagersSoapIn" />
+      <wsdl:output message="tns:dataset_ManagersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a string with the name of the Manager for a given 'Departamento' </wsdl:documentation>
+      <wsdl:input message="tns:wsManagerNameSoapIn" />
+      <wsdl:output message="tns:wsManagerNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dataset returns behalf of users</wsdl:documentation>
+      <wsdl:input message="tns:dataset_UsersSoapIn" />
+      <wsdl:output message="tns:dataset_UsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns list of officials Microsiga</wsdl:documentation>
+      <wsdl:input message="tns:ArrayList_OfficialsMicrosigaSoapIn" />
+      <wsdl:output message="tns:ArrayList_OfficialsMicrosigaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns list of officials Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:ArrayList_activedirectorySoapIn" />
+      <wsdl:output message="tns:ArrayList_activedirectorySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a list with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:wsSAMAccountNameSoapIn" />
+      <wsdl:output message="tns:wsSAMAccountNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a list with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:wsFullNameSoapIn" />
+      <wsdl:output message="tns:wsFullNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return Department from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsDepartmentSoapIn" />
+      <wsdl:output message="tns:wsDepartmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns's email requesting the active directory</wsdl:documentation>
+      <wsdl:input message="tns:wsEmailRequestorSoapIn" />
+      <wsdl:output message="tns:wsEmailRequestorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return Company from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsCompanySoapIn" />
+      <wsdl:output message="tns:wsCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Web_container_contabilidade from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsContainerSoapIn" />
+      <wsdl:output message="tns:wsContainerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Biometrico from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsBiometricoSoapIn" />
+      <wsdl:output message="tns:wsBiometricoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Web_Analista from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsAnalistaSoapIn" />
+      <wsdl:output message="tns:wsAnalistaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSusernameHttpGet">
+    <wsdl:operation name="dataset_SAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return DataSet with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:dataset_SAMAccountNameHttpGetIn" />
+      <wsdl:output message="tns:dataset_SAMAccountNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dataset returns information to users</wsdl:documentation>
+      <wsdl:input message="tns:dataset_auditoriaHttpGetIn" />
+      <wsdl:output message="tns:dataset_auditoriaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns Dataset with names of managers</wsdl:documentation>
+      <wsdl:input message="tns:dataset_ManagersHttpGetIn" />
+      <wsdl:output message="tns:dataset_ManagersHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a string with the name of the Manager for a given 'Departamento' </wsdl:documentation>
+      <wsdl:input message="tns:wsManagerNameHttpGetIn" />
+      <wsdl:output message="tns:wsManagerNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dataset returns behalf of users</wsdl:documentation>
+      <wsdl:input message="tns:dataset_UsersHttpGetIn" />
+      <wsdl:output message="tns:dataset_UsersHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns list of officials Microsiga</wsdl:documentation>
+      <wsdl:input message="tns:ArrayList_OfficialsMicrosigaHttpGetIn" />
+      <wsdl:output message="tns:ArrayList_OfficialsMicrosigaHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns list of officials Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:ArrayList_activedirectoryHttpGetIn" />
+      <wsdl:output message="tns:ArrayList_activedirectoryHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a list with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:wsSAMAccountNameHttpGetIn" />
+      <wsdl:output message="tns:wsSAMAccountNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a list with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:wsFullNameHttpGetIn" />
+      <wsdl:output message="tns:wsFullNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return Department from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsDepartmentHttpGetIn" />
+      <wsdl:output message="tns:wsDepartmentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns's email requesting the active directory</wsdl:documentation>
+      <wsdl:input message="tns:wsEmailRequestorHttpGetIn" />
+      <wsdl:output message="tns:wsEmailRequestorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return Company from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsCompanyHttpGetIn" />
+      <wsdl:output message="tns:wsCompanyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Web_container_contabilidade from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsContainerHttpGetIn" />
+      <wsdl:output message="tns:wsContainerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Biometrico from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsBiometricoHttpGetIn" />
+      <wsdl:output message="tns:wsBiometricoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Web_Analista from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsAnalistaHttpGetIn" />
+      <wsdl:output message="tns:wsAnalistaHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WSusernameHttpPost">
+    <wsdl:operation name="dataset_SAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return DataSet with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:dataset_SAMAccountNameHttpPostIn" />
+      <wsdl:output message="tns:dataset_SAMAccountNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dataset returns information to users</wsdl:documentation>
+      <wsdl:input message="tns:dataset_auditoriaHttpPostIn" />
+      <wsdl:output message="tns:dataset_auditoriaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns Dataset with names of managers</wsdl:documentation>
+      <wsdl:input message="tns:dataset_ManagersHttpPostIn" />
+      <wsdl:output message="tns:dataset_ManagersHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a string with the name of the Manager for a given 'Departamento' </wsdl:documentation>
+      <wsdl:input message="tns:wsManagerNameHttpPostIn" />
+      <wsdl:output message="tns:wsManagerNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Dataset returns behalf of users</wsdl:documentation>
+      <wsdl:input message="tns:dataset_UsersHttpPostIn" />
+      <wsdl:output message="tns:dataset_UsersHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns list of officials Microsiga</wsdl:documentation>
+      <wsdl:input message="tns:ArrayList_OfficialsMicrosigaHttpPostIn" />
+      <wsdl:output message="tns:ArrayList_OfficialsMicrosigaHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns list of officials Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:ArrayList_activedirectoryHttpPostIn" />
+      <wsdl:output message="tns:ArrayList_activedirectoryHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a list with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:wsSAMAccountNameHttpPostIn" />
+      <wsdl:output message="tns:wsSAMAccountNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns a list with information from the user</wsdl:documentation>
+      <wsdl:input message="tns:wsFullNameHttpPostIn" />
+      <wsdl:output message="tns:wsFullNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return Department from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsDepartmentHttpPostIn" />
+      <wsdl:output message="tns:wsDepartmentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">returns's email requesting the active directory</wsdl:documentation>
+      <wsdl:input message="tns:wsEmailRequestorHttpPostIn" />
+      <wsdl:output message="tns:wsEmailRequestorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return Company from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsCompanyHttpPostIn" />
+      <wsdl:output message="tns:wsCompanyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Web_container_contabilidade from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsContainerHttpPostIn" />
+      <wsdl:output message="tns:wsContainerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Biometrico from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsBiometricoHttpPostIn" />
+      <wsdl:output message="tns:wsBiometricoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">return User Group Web_Analista from Active Directory</wsdl:documentation>
+      <wsdl:input message="tns:wsAnalistaHttpPostIn" />
+      <wsdl:output message="tns:wsAnalistaHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSusernameSoap" type="tns:WSusernameSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="dataset_SAMAccountName">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/dataset_SAMAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/dataset_auditoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/dataset_Managers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsManagerName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/dataset_Users" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/ArrayList_OfficialsMicrosiga" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/ArrayList_activedirectory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsSAMAccountName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsFullName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsEmailRequestor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsContainer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsBiometrico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <soap:operation soapAction="http://webservice.ecourbis.com.br/wsAnalista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSusernameSoap12" type="tns:WSusernameSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="dataset_SAMAccountName">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/dataset_SAMAccountName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/dataset_auditoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/dataset_Managers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsManagerName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/dataset_Users" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/ArrayList_OfficialsMicrosiga" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/ArrayList_activedirectory" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsSAMAccountName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsFullName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsDepartment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsEmailRequestor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsContainer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsBiometrico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <soap12:operation soapAction="http://webservice.ecourbis.com.br/wsAnalista" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSusernameHttpGet" type="tns:WSusernameHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="dataset_SAMAccountName">
+      <http:operation location="/dataset_SAMAccountName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <http:operation location="/dataset_auditoria" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <http:operation location="/dataset_Managers" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <http:operation location="/wsManagerName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <http:operation location="/dataset_Users" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <http:operation location="/ArrayList_OfficialsMicrosiga" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <http:operation location="/ArrayList_activedirectory" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <http:operation location="/wsSAMAccountName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <http:operation location="/wsFullName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <http:operation location="/wsDepartment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <http:operation location="/wsEmailRequestor" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <http:operation location="/wsCompany" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <http:operation location="/wsContainer" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <http:operation location="/wsBiometrico" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <http:operation location="/wsAnalista" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSusernameHttpPost" type="tns:WSusernameHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="dataset_SAMAccountName">
+      <http:operation location="/dataset_SAMAccountName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_auditoria">
+      <http:operation location="/dataset_auditoria" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Managers">
+      <http:operation location="/dataset_Managers" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsManagerName">
+      <http:operation location="/wsManagerName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dataset_Users">
+      <http:operation location="/dataset_Users" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_OfficialsMicrosiga">
+      <http:operation location="/ArrayList_OfficialsMicrosiga" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ArrayList_activedirectory">
+      <http:operation location="/ArrayList_activedirectory" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsSAMAccountName">
+      <http:operation location="/wsSAMAccountName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsFullName">
+      <http:operation location="/wsFullName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsDepartment">
+      <http:operation location="/wsDepartment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsEmailRequestor">
+      <http:operation location="/wsEmailRequestor" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsCompany">
+      <http:operation location="/wsCompany" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsContainer">
+      <http:operation location="/wsContainer" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsBiometrico">
+      <http:operation location="/wsBiometrico" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="wsAnalista">
+      <http:operation location="/wsAnalista" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSusername">
+    <wsdl:port name="WSusernameSoap" binding="tns:WSusernameSoap">
+      <soap:address location="http://webservice.ecourbis.com.br/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSusernameSoap12" binding="tns:WSusernameSoap12">
+      <soap12:address location="http://webservice.ecourbis.com.br/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSusernameHttpGet" binding="tns:WSusernameHttpGet">
+      <http:address location="http://webservice.ecourbis.com.br/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSusernameHttpPost" binding="tns:WSusernameHttpPost">
+      <http:address location="http://webservice.ecourbis.com.br/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

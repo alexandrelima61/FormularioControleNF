@@ -1,0 +1,12 @@
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.Repository.dll.config
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.Repository.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.Repository.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.Model.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\EntityFramework.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.DataAccess.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\Ecourbis.FormularioNFRemRet.Model.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\bin\Debug\EntityFramework.xml
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\obj\Debug\Ecourbis.FormularioNFRemRet.Repository.csprojResolveAssemblyReference.cache
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\obj\Debug\Ecourbis.FormularioNFRemRet.Repository.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Repository\obj\Debug\Ecourbis.FormularioNFRemRet.Repository.pdb

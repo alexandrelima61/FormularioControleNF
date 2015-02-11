@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset='iso-8859-1' />
+    <title>Solicitação de Nota Fiscal de Remessa ou Retorno</title>
+    <!--<link rel='stylesheet' href='http://cam.ecourbis.com.br/web/imagens/bootstrap.minjl.css' />
+    <script src='http://http://cam.ecourbis.com.br/web/imagens/bootstrap.minjl.js'></script>-->
+    <style>
+        .principal {
+            padding: 20px 10px;
+        }
+
+        .rotulo {
+            font-weight: bold;
+            font-family: Arial,Tahoma,'Segoe UI';
+            font-size: 13px;
+        }
+
+        .informativo {
+            font-weight: normal;
+            font-family: Arial,Tahoma,'Segoe UI';
+            font-size: 12px;
+            color: #033dfc;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .banner-dtPrazo {
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .alert-success {
+            background-color: #82d29e;
+            border: solid 1px #d0cece;
+            color: #fff;
+        }
+
+
+        .csshr {
+            border-top: 1px solid #808080;
+        }
+    </style>
+</head>
+<body>
+    <div class='container principal'>
+        <table style="border: solid 1px #808080;">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class='col-lg-2'>
+                            <img src='http://cam.ecourbis.com.br/web/imagens/top-logo.png' />
+                        </div>
+                    </td>
+                    <td colspan="3">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class='text-center rotulo'>
+                                            <p>FORMULÁRIO DE SOLICITAÇÃO DE NOTA FISCAL DE REMESSA OU RETORNO DE BENS EM GERAL E DE CONTROLE DE RECEBIMENTO DE BENS DE TERCEIROS</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class='text-center'>
+                                            <span class='rotulo'>Data da Solicitação: </span>&nbsp;<span class="informativo">28/08/2014</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class='text-center banner-dtPrazo'>
+                                            <span class="rotulo">Prazo previsto para o Retorno: </span>&nbsp;<span class="rotulo">30/08/2014</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="csshr">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="text-center">
+                                            <span class="rotulo">Retirada</span>
+                                            <hr class='csshr' />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">
+                                        <div class="text-left informativo">
+                                            <input type='radio' name='ret' value='1' checked='checked' disabled='disabled' />&nbsp;Sul<br>
+                                            <input type='radio' name='vehicle' value='2' disabled='disabled' />&nbsp;Leste<br>
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="csshr">
+                        <table>
+                            <tbody>
+                                <tr style="width:100%;">
+                                    <td class="text-center">
+                                        <div class="text-center rotulo">
+                                            <span>Unidade</span>
+                                            <hr class="csshr" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">
+                                        <div class="text-left informativo">
+                                            <span>
+                                                <input type='radio' name='vehicle' value='1' disabled='disabled' />&nbsp;Sul<br>
+                                                <input type='radio' name='vehicle' value='1' disabled='disabled' />&nbsp;Leste<br>
+                                                <input type='radio' name='vehicle' value='1' disabled='disabled' />&nbsp;Transb. Sto. Amaro<br>
+                                                <input type='radio' name='uni' value='4' checked='checked' disabled='disabled' />&nbsp;Transb. Vergueiro<br>
+                                                <input type='radio' name='vehicle' value='1' disabled='disabled' />&nbsp;Central Mecan. Triagem<br>
+                                                <input type='radio' name='vehicle' value='1' disabled='disabled' />&nbsp;Aterro CTL<br>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="csshr">
+                        <table>
+                            <tbody>
+                                <tr style="width:100%;">
+                                    <td class="text-center">
+                                        <div class="text-center">
+                                            <span>Dados do Solicitante</span>
+                                            <hr class="csshr" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">
+                                        <div class="text-left">
+                                            <span>
+                                                <span class="rotulo">Nome:</span>&nbsp;<span class="informativo"> Jose Alexandre de Lima</span>   <br /><br />
+                                                <span class='rotulo'>Depart:</span>&nbsp;<span class='informativo'>Tecnologia da Informação</span>   <br /><br />
+                                                <span class='rotulo'>Função:</span>&nbsp;<span class='informativo'>ANALISTA PROGRAMADOR</span>   <br /><br />
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class="csshr" style="text-align:right;">
+                        <table>
+                            <tbody>
+                                <tr style="width:100%;">
+                                    <td class="text-center">
+                                        <div class="text-center rotulo">
+                                            <span>Tipo do Controle</span>
+                                            <hr class="csshr" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left">
+                                        <div class="text-left informativo">
+                                            <span>
+                                                <input type='radio' name='vehicle' value='1' disabled='disabled' />&nbsp;Nota Fiscal de Remessa<br />
+                                                <input type='radio' name='vehicle' value='2' checked='checked' disabled='disabled' />&nbsp;Receb. de Bem de Terceiros<br />
+                                                <input type='radio' name='vehicle' value='3' disabled='disabled' />&nbsp;Nota Fiscal de Terceiro<br />
+                                            </span>
+                                            <br />
+
+                                            <div style="margin-left:10px;">
+                                                <span class='input-group-addon'>NF de Origem:</span>
+                                                <span class='form-control'></span>
+                                            </div>
+
+                                            <br />
+                                            <br />
+                                            <br />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="padding:5px 5px;">
+                    <td class="csshr text-left">
+                        <br />
+                        <span class='rotulo'>Codigo:</span>&nbsp;&nbsp;<span class='informativo'>001308</span>
+                    </td>
+                    <td class="csshr text-left" colspan="2">
+                        <br />
+                        <span class='rotulo'>Razão Social:</span>&nbsp;&nbsp;<span class='informativo'>DIBRACAM COMERCIAL LTDA.</span>
+                    </td>
+                    <td class="csshr">
+                        <br />
+                        <span class='rotulo'>Loja:</span>&nbsp;&nbsp;<span class='informativo'>02</span>
+                    </td>
+                </tr>
+                <tr style="padding:5px 5px;">
+                    <td class="csshr text-left" colspan="2">
+                        <br />
+                        <span class='rotulo'>Endereço:</span>&nbsp;&nbsp;<span class='informativo'>AV. CORIFEU DE AZEVEDO MARQUES, 345</span>
+                    </td>
+                    <td class="csshr text-left" colspan="2">
+                        <br />
+                        <span class='rotulo'>Email:</span>&nbsp;&nbsp;<span class='informativo'>sp.servicos@dibracam.com.br</span>
+                    </td>
+                </tr>
+                <tr style="padding:5px 5px;">
+                    <td class="csshr text-left" colspan="2">
+                        <br />
+                        <span class='rotulo'>Telefone:</span>&nbsp;&nbsp;<span class='informativo'>(011) 3724-8888</span>
+                    </td>
+                    <td class="csshr text-left" colspan="2">
+                        <br />
+                        <span class='rotulo'>CNPJ:</span>&nbsp;&nbsp;<span class='informativo'>01.900.227/0003-18</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="csshr">
+                        <br />
+                        <table class="table table-responsive" style="width:99.8%;">
+                            <thead>
+                                <tr style="border: solid 1px #d0cece; ">
+                                    <th class="alert-success">Item</th>
+                                    <th class="alert-success">Código</th>
+                                    <th class="alert-success">Descrição</th>
+                                    <th class="alert-success">Und. Méd.</th>
+                                    <th class="alert-success">Quant.</th>
+                                    <th class="alert-success">Controle</th>
+                                    <th class="alert-success">Prazo Ret.</th>
+                                </tr>
+                            </thead>
+                            <tr class="informativo">
+                                <td style="border-bottom: solid 1px #808080;">001</td>
+                                <td style="border-bottom: solid 1px #808080;">E004.278.523</td>
+                                <td style="border-bottom: solid 1px #808080;">CARCACA DO EIXO TRASEIRO (DIFERENCIAL) MBB - 9583502820</td>
+                                <td style="border-bottom: solid 1px #808080;">PC</td>
+                                <td style="border-bottom: solid 1px #808080;">5</td>
+                                <td style="border-bottom: solid 1px #808080;">00000001</td>
+                                <td style="border-bottom: solid 1px #808080;">02/09/2014</td>
+                            </tr>
+                            <tr class="informativo">
+                                <td style="border-bottom: solid 1px #808080;">002</td>
+                                <td style="border-bottom: solid 1px #808080;">C002.224.204</td>
+                                <td style="border-bottom: solid 1px #808080;">CARDAN DA BOMBA HIDRAULICA - EQUIP. USIMECA</td>
+                                <td style="border-bottom: solid 1px #808080;">UN</td>
+                                <td style="border-bottom: solid 1px #808080;">5</td>
+                                <td style="border-bottom: solid 1px #808080;">00000001</td>
+                                <td style="border-bottom: solid 1px #808080;">31/08/2014</td>
+                            </tr>
+                        </table>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="csshr rotulo text-center">
+                        <br />
+                        <span>RECB. DE BEM DE TERCEUROS</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center csshr" colspan="4">
+                        <br />
+                        <table style="width:98%">
+                            <tr>
+                                <td>
+                                    <input id='rddLocTer' type='radio' name='tipo' value='rddLocTer' checked='checked' disabled='disabled' />&nbsp;<label class="rotulo">Locação</label>
+                                </td>
+                                <td>
+                                    <input id='rddLocTer' type='radio' name='tipo' value='rddLocTer' checked='checked' disabled='disabled' />&nbsp;<label class="rotulo">Locação</label>
+                                </td>
+                                <td>
+                                    <input id='rddLocTer' type='radio' name='tipo' value='rddLocTer' checked='checked' disabled='disabled' />&nbsp;<label class="rotulo">Locação</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-center csshr informativo">
+                                    <br />
+                                    <p>Justificativa</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

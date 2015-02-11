@@ -1,0 +1,5 @@
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Model\bin\Debug\Ecourbis.FormularioNFRemRet.Model.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Model\bin\Debug\Ecourbis.FormularioNFRemRet.Model.pdb
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Model\obj\Debug\Ecourbis.FormularioNFRemRet.Model.csprojResolveAssemblyReference.cache
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Model\obj\Debug\Ecourbis.FormularioNFRemRet.Model.dll
+C:\Users\jalima\Documents\Visual Studio 2013\Projects\Ecourbis.FormularioNFRemRet.UI.Web\Ecourbis.FormularioNFRemRet.Model\obj\Debug\Ecourbis.FormularioNFRemRet.Model.pdb

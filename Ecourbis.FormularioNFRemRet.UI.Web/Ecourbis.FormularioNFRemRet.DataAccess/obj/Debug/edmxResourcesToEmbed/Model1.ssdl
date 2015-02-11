@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DADOSADVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityType Name="PAG010">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="PAG_FILIAL" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="PAG_COD" Type="float" Nullable="false" />
+    <Property Name="D_E_L_E_T_" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="R_E_C_N_O_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PAH010">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="PAH_FILIAL" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="PAH_CONTRO" Type="float" Nullable="false" />
+    <Property Name="PAH_RETIRA" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAH_USER" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PAH_NUMUSE" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="PAH_DEPUSE" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="PAH_EMAIL" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="PAH_DTSOLI" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAH_PRAZO" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAH_PRAZOU" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAH_PRAZOS" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAH_UNIDAD" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAH_TIPO" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAH_NFORI" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAH_CLIFOR" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="PAH_LOJA" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="PAH_NOME" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="PAH_END" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="PAH_TEL" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PAH_NFREM" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAH_NFTERC" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAH_NFRET" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="PAH_JUST" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="PAH_FUNUSE" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="PAH_CGC" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="PAH_EMAILF" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="PAH_BAIXAD" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="D_E_L_E_T_" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="R_E_C_N_O_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PAI010">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="PAI_FILIAL" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="PAI_ITEM" Type="float" Nullable="false" />
+    <Property Name="PAI_CODP" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="PAI_DESC" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="PAI_QTD" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="PAI_CONTRO" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAI_PRAZO" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="PAI_UNMED" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="PAI_LOGPRA" Type="float" Nullable="false" />
+    <Property Name="D_E_L_E_T_" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="R_E_C_N_O_" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewForne' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewForne">
+    <Key>
+      <PropertyRef Name="A2_COD" />
+      <PropertyRef Name="A2_NOME" />
+      <PropertyRef Name="A2_LOJA" />
+      <PropertyRef Name="A2_END" />
+      <PropertyRef Name="A2_DDD" />
+      <PropertyRef Name="A2_TEL" />
+      <PropertyRef Name="A2_EMAIL" />
+      <PropertyRef Name="A2_CGC" />
+    </Key>
+    <Property Name="A2_COD" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="A2_NOME" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="A2_LOJA" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="A2_END" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="A2_DDD" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="A2_TEL" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="A2_EMAIL" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="A2_CGC" Type="varchar" MaxLength="14" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewFuncao' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewFuncao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" MaxLength="40" />
+    <Property Name="Funcao" Type="varchar" MaxLength="70" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewGstEco' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewGstEco">
+    <Key>
+      <PropertyRef Name="R_E_C_N_O_" />
+    </Key>
+    <Property Name="Nome" Type="varchar" MaxLength="30" />
+    <Property Name="Matricula" Type="int" />
+    <Property Name="CC" Type="varchar" MaxLength="10" />
+    <Property Name="Custo" Type="varchar" MaxLength="40" />
+    <Property Name="CodGestor" Type="varchar" MaxLength="9" />
+    <Property Name="Superior" Type="int" />
+    <Property Name="NomeSuperior" Type="varchar" MaxLength="30" />
+    <Property Name="R_E_C_N_O_" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewMatUser' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewMatUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Matricula" Type="nvarchar" MaxLength="10" />
+    <Property Name="Login_User" Type="nvarchar" MaxLength="40" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewProd' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewProd">
+    <Key>
+      <PropertyRef Name="B1_COD" />
+      <PropertyRef Name="B1_DESC" />
+    </Key>
+    <Property Name="B1_COD" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="B1_DESC" Type="varchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DADOSADV.dbo.viewUnidMed' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="viewUnidMed">
+    <Key>
+      <PropertyRef Name="AH_UNIMED" />
+      <PropertyRef Name="AH_UMRES" />
+    </Key>
+    <Property Name="AH_UNIMED" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="AH_UMRES" Type="varchar" MaxLength="9" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DADOSADVModelStoreContainer">
+    <EntitySet Name="PAG010" EntityType="Self.PAG010" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PAH010" EntityType="Self.PAH010" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PAI010" EntityType="Self.PAI010" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="viewForne" EntityType="Self.viewForne" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[viewForne].[A2_COD] AS [A2_COD], 
+[viewForne].[A2_NOME] AS [A2_NOME], 
+[viewForne].[A2_LOJA] AS [A2_LOJA], 
+[viewForne].[A2_END] AS [A2_END], 
+[viewForne].[A2_DDD] AS [A2_DDD], 
+[viewForne].[A2_TEL] AS [A2_TEL], 
+[viewForne].[A2_EMAIL] AS [A2_EMAIL], 
+[viewForne].[A2_CGC] AS [A2_CGC]
+FROM [dbo].[viewForne] AS [viewForne]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viewFuncao" EntityType="Self.viewFuncao" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[viewFuncao].[Id] AS [Id], 
+[viewFuncao].[Login] AS [Login], 
+[viewFuncao].[Funcao] AS [Funcao]
+FROM [dbo].[viewFuncao] AS [viewFuncao]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viewGstEco" EntityType="Self.viewGstEco" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[viewGstEco].[Nome] AS [Nome], 
+[viewGstEco].[Matricula] AS [Matricula], 
+[viewGstEco].[CC] AS [CC], 
+[viewGstEco].[Custo] AS [Custo], 
+[viewGstEco].[CodGestor] AS [CodGestor], 
+[viewGstEco].[Superior] AS [Superior], 
+[viewGstEco].[NomeSuperior] AS [NomeSuperior], 
+[viewGstEco].[R_E_C_N_O_] AS [R_E_C_N_O_]
+FROM [dbo].[viewGstEco] AS [viewGstEco]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viewMatUser" EntityType="Self.viewMatUser" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[viewMatUser].[Id] AS [Id], 
+[viewMatUser].[Matricula] AS [Matricula], 
+[viewMatUser].[Login_User] AS [Login_User]
+FROM [dbo].[viewMatUser] AS [viewMatUser]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viewProd" EntityType="Self.viewProd" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[viewProd].[B1_COD] AS [B1_COD], 
+[viewProd].[B1_DESC] AS [B1_DESC]
+FROM [dbo].[viewProd] AS [viewProd]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viewUnidMed" EntityType="Self.viewUnidMed" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[viewUnidMed].[AH_UNIMED] AS [AH_UNIMED], 
+[viewUnidMed].[AH_UMRES] AS [AH_UMRES]
+FROM [dbo].[viewUnidMed] AS [viewUnidMed]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
